@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>kingsukh guest house</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">kingsukh guest house</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#rooms">ROOMS</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#booking-details">booking details</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="phone">
++91 9007062180</span>
+      <button class="btn-book">BOOK NOW</button>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>kingsukh guest house</h1>
+      <p>YOUR UNFORGETTABLE GETAWAY</p>
+      <form action="/book" method="POST" class="booking-form">
+  <input type="date" name="checkin" required />
+  <input type="date" name="checkout" required />
+  <select name="guests" required>
+    <option>2 Guests</option>
+    <option>1 Guest</option>
+    <option>3 Guests</option>
+  </select>
+  <button type="submit" class="btn-book" a herf="#details">BOOK NOW</button>
+</form>
+
+
+      
+  </section>
+
+  <!-- Hotel Description -->
+  <section class="description">
+    <h2>kingsukh guest house</h2>
+    <p>
+      Welcome to kingsukh guest house, your home away from home. Nestled in the heart of the city, we offer a perfect blend of comfort and luxury. Our rooms are designed to provide you with a relaxing stay, equipped with modern amenities and warm hospitality.
+
+      Whether you're here for business or leisure, our dedicated staff is committed to making your stay memorable. Enjoy our complimentary breakfast, free Wi-Fi, and 24/7 room service. Explore the local attractions, dine at nearby restaurants, or simply unwind in our cozy lounge. At kingsukh guest house, we ensure that every moment of your stay is special.
+    </p>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="rooms" id="rooms">
+    <div class="section-header">
+      <h2>Rooms</h2>
+      <a href="#" class="see-all">See All</a>
+    </div>
+    <div class="room-gallery">
+      <div class="room-card">
+        <img src="large.jpg" alt="Room 1" />
+      </div>
+      <div class="room-card">
+        <img src="small.jpg" alt="Room 2" />
+      </div>
+      <div class="room-card">
+        <img src="room1.jpg" alt="Room 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">  
+    <div class="section-header">
+      <h2>Gallery</h2>
+      <a href="#" class="see-all">See All</a> 
+    </div>
+    <div class="gallery-grid" display="flex">
+      <div class="gallery-item">
+        <img src="room1.jpg" alt="Gallery Image 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="service.jpg" alt="Gallery Image 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="small.jpg" alt="Gallery Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="large.jpg" alt="Gallery Image 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="ayodhya.webp" alt="Gallery Image 5" />
+      </div>
+      <div class="gallery-item">
+        <img src="recep.jpg" alt="Gallery Image 6" />
+      </div>
+    </div>
+  </section>
+<!--contact section-->
+<section>
+  <div class="section-header" id="contact">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="contact-info">
+    <p>For inquiries, <br> please call us at <strong><a herf="tel:+91 9007062180">call us: +91 9007062180</strong><br> or email us at <strong><a herf= "mailto:kkghosh0099@gmail.com">email us: kkghosh0099@gmail.com<br>
+    </strong></a></p>
+    <p>Visit us at: <br><strong> kingsukh guest house,</strong> <br> <strong> Purulia, West Bengal</strong></p>
+  </div>
+</div>
+
+</section>
+<!--details of booking-->
+<section class="booking-details" id="booking-details">
+  <div class="section-header" id="details">
+    <h2>Booking Details</h2>
+  </div>
+  <div class="booking-details">
+    <div class="contact-form">
+    <h2>Send a Message</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="First Name" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Last Name" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+          <label>Mobile Number</label><br>
+          <input type="tel" placeholder="Mobile Number" />
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label>Write your message here...</label>
+        <textarea rows="4" placeholder="Write your message here..."></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  </div>
+</section>
+</body>
+</html>
